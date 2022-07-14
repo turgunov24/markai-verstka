@@ -1,0 +1,16 @@
+#section-seven-cards{
+    border-image: linear-gradient(to right,
+            #00f0ff 0%,
+            #5773ff 46.87%,
+            #ff007a 100%);
+    border-width: 2px;
+    border-style: solid;
+    border-image-slice: 1;
+    border-radius: 10px !important;
+    margin-top: 20px;
+    background: linear-gradient(to right,
+            #00f0ff10 0%,
+            #5773ff10 46.87%,
+            #ff007a10 100%);
+    ;
+}

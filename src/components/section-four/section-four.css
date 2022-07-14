@@ -1,0 +1,12 @@
+#section-four-video-div {
+  border-image: linear-gradient(
+    to right,
+    #00f0ff 0%,
+    #5773ff 46.87%,
+    #ff007a 100%
+  );
+  border-width: 5px;
+  border-style: solid;
+  border-image-slice: 1;
+  border-radius: 10px !important;
+}

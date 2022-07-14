@@ -1,0 +1,36 @@
+#section-eight{
+  background-color: #1B173A;
+}
+#footer-button {
+  border-image: linear-gradient(
+    to right,
+    #00f0ff 0%,
+    #5773ff 46.87%,
+    #ff007a 100%
+  );
+  border-width: 2px;
+  border-style: solid;
+  border-image-slice: 1;
+  border-radius: 10px !important;
+}
+#footer-icons > a {
+  color: rgb(0, 225, 255);
+  font-size: 35px;
+}
+#footer-grid-template {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  row-gap: 40px;
+}
+#footer-grid-template > ul {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+#footer-grid-template > ul > span {
+  font-size: 16px;
+  font-weight: bold;
+}
+#footer-grid-template > ul > li {
+  font-size: 13px;
+}
