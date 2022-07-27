@@ -21,7 +21,7 @@ function Footer() {
         </p>
         <button
           id="footer-button"
-          className="self-center mt-2 py-1 px-4
+          className="self-start mt-2 py-1 px-4
                 xs:px-8 md:px-12 "
         >
           Let’s go

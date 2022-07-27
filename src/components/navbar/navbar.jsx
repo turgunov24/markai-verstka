@@ -5,18 +5,30 @@ import ColumnNavbar from "./additional-navbar/column-navbar";
 import "./navbar.css";
 import FlexNavbar from "./additional-navbar/flex-navbar";
 
+//additional
+import { motion } from "framer-motion";
+
 function Navbar(props) {
   const [toggle, setToggle] = useState(false);
   const [navbarBg, setnavbarBg] = useState(false);
-  window.addEventListener("scroll", () => {
-    if (scrollY <= 65) {
-      setnavbarBg(true);
-    } else {
-      setnavbarBg(false);
-    }
-  });
+  // window.addEventListener("scroll", () => {
+  //   if (scrollY <= 65) {
+  //     setnavbarBg(true);
+  //   } else {
+  //     setnavbarBg(false);
+  //   }
+  // });
   return (
-    <nav
+    <motion.nav
+      initial={{
+        opacity: 0,
+        y: "-100vh",
+      }}
+      animate={{
+        opacity: 1,
+        y: 0,
+        transition: { duration: 1 },
+      }}
       id="navbar"
       className={
         navbarBg
@@ -33,9 +45,8 @@ function Navbar(props) {
       </button>
       <ColumnNavbar toggle={toggle} navbarbg={navbarBg} />
       <FlexNavbar />
-    </nav>
+    </motion.nav>
   );
 }
 
-export default (Navbar);
-
+export default Navbar;

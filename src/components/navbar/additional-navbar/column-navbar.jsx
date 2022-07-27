@@ -1,5 +1,7 @@
 import React from "react";
 import "../navbar.css";
+//additional
+import { motion } from "framer-motion"
 
 export const navLinks = [
   { link: "Features" },
@@ -17,7 +19,7 @@ function ColumnNavbar(props) {
       id="column-navbar"
       className={`${
         toggle
-          ? "absolute top-[60px] left-1/2 -translate-x-1/2 flex flex-col items-center w-full gap-[4px] bg-bodyBg border-t py-2 md:hidden"
+          ? "absolute top-[72px] left-1/2 -translate-x-1/2 flex flex-col items-center w-full gap-[4px] bg-bodyBg border-t py-2 md:hidden"
           : "hidden"
       }`}
     >
