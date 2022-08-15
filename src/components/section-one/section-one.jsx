@@ -1,7 +1,7 @@
-import React from "react";
+import React, { useEffect, useRef } from "react";
 import "./section-one.css";
 import ArrowRightAltIcon from "@mui/icons-material/ArrowRightAlt";
-import { IoIosArrowDown } from "react-icons/io"
+import { IoIosArrowDown } from "react-icons/io";
 
 //addtional
 import { motion } from "framer-motion";
@@ -13,7 +13,7 @@ const motionArrow = {
   },
   visible: {
     opacity: 1,
-    y:0,
+    y: 0,
     transition: {
       duration: 1,
       type: "spring",
@@ -44,7 +44,7 @@ function SectionOne() {
         className="flex items-center gap-1 py-2 px-2 sm:px-5 md:px-9 xl:px-10"
       >
         <span>Let’s go </span>
-        <ArrowRightAltIcon />{" "}
+        <ArrowRightAltIcon />
       </button>
       <motion.span
         variants={motionArrow}
